@@ -1,0 +1,245 @@
+{
+  "samples": [
+    {
+      "id": "frame442",
+      "label": "Endoscopie HD — frame442 (avec vérité terrain)",
+      "image": "endoscopie_hd/frame442.png",
+      "mask": "endoscopie_hd/frame442_glottis.png",
+      "modality": "Endoscopie laryngée RGB 640x480",
+      "source": "Rapport Atelier 1 (image native) ; masque frame442_glottis.png (TP1 ex.3 / TP2 ex.5)",
+      "notes": "Autre séquence (autre patient, autre date) et autre résolution que le dataset du TP4 : vrai test de généralisation du U-Net. La glotte touche le bord du champ utile : exclusion du bord désactivée.",
+      "preset": {
+        "exclude_border": false
+      },
+      "in_demo_training": false
+    },
+    {
+      "id": "tp4_test_00",
+      "label": "Endoscopie TP4 — frame de test 0 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_00.png",
+      "mask": "endoscopie_tp4/tp4_test_00_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00084, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_00_pred.png"
+    },
+    {
+      "id": "tp4_test_01",
+      "label": "Endoscopie TP4 — frame de test 1 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_01.png",
+      "mask": "endoscopie_tp4/tp4_test_01_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00054, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_01_pred.png"
+    },
+    {
+      "id": "tp4_test_02",
+      "label": "Endoscopie TP4 — frame de test 2 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_02.png",
+      "mask": "endoscopie_tp4/tp4_test_02_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00071, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_02_pred.png"
+    },
+    {
+      "id": "tp4_test_03",
+      "label": "Endoscopie TP4 — frame de test 3 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_03.png",
+      "mask": "endoscopie_tp4/tp4_test_03_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00046, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_03_pred.png"
+    },
+    {
+      "id": "tp4_test_04",
+      "label": "Endoscopie TP4 — frame de test 4 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_04.png",
+      "mask": "endoscopie_tp4/tp4_test_04_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00045, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_04_pred.png"
+    },
+    {
+      "id": "tp4_test_05",
+      "label": "Endoscopie TP4 — frame de test 5 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_05.png",
+      "mask": "endoscopie_tp4/tp4_test_05_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00040, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_05_pred.png"
+    },
+    {
+      "id": "tp4_test_06",
+      "label": "Endoscopie TP4 — frame de test 6 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_06.png",
+      "mask": "endoscopie_tp4/tp4_test_06_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00023, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_06_pred.png"
+    },
+    {
+      "id": "tp4_test_07",
+      "label": "Endoscopie TP4 — frame de test 7 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_07.png",
+      "mask": "endoscopie_tp4/tp4_test_07_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00081, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_07_pred.png"
+    },
+    {
+      "id": "tp4_test_08",
+      "label": "Endoscopie TP4 — frame de test 8 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_08.png",
+      "mask": "endoscopie_tp4/tp4_test_08_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00011, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_08_pred.png"
+    },
+    {
+      "id": "tp4_test_09",
+      "label": "Endoscopie TP4 — frame de test 9 (avec vérité terrain)",
+      "image": "endoscopie_tp4/tp4_test_09.png",
+      "mask": "endoscopie_tp4/tp4_test_09_mask.png",
+      "modality": "Endoscopie laryngée RGB 256x256 (dataset TP4)",
+      "source": "TP4_IM.ipynb cellule 37 (figure reconstruite) ; prédiction du U-Net 50 époques du TP4 dans tp4_unet50_predictions/",
+      "notes": "Image du jeu de TEST du TP4 (jamais vue à l'entraînement du U-Net ; probablement la frame n° 00001, déduit du split random_state=42). Mais les 100 frames proviennent d'une même vidéo : des frames voisines quasi identiques étaient dans l'entraînement. Image reconstruite depuis la figure du notebook (légèrement plus floue que l'original) : les glottes de quelques pixels sont sensibles à cette perte.",
+      "preset": {
+        "min_area": 5,
+        "opening_size": 3
+      },
+      "in_demo_training": false,
+      "tp4_prediction": "endoscopie_tp4/tp4_unet50_predictions/tp4_test_09_pred.png"
+    },
+    {
+      "id": "frame439",
+      "label": "Endoscopie HD — frame439",
+      "image": "endoscopie_hd/frame439.png",
+      "mask": null,
+      "modality": "Endoscopie laryngée RGB 640x480",
+      "source": "Rapport Atelier 5 (image native)",
+      "notes": "Pas de vérité terrain : comparaison visuelle uniquement.",
+      "preset": {
+        "exclude_border": false
+      },
+      "in_demo_training": false
+    },
+    {
+      "id": "frame266",
+      "label": "Endoscopie HD — frame266 (floue)",
+      "image": "endoscopie_hd/frame266.png",
+      "mask": null,
+      "modality": "Endoscopie laryngée RGB 640x480",
+      "source": "Rapport Atelier 5 (image native)",
+      "notes": "Pas de vérité terrain : comparaison visuelle uniquement.",
+      "preset": {
+        "exclude_border": false
+      },
+      "in_demo_training": false
+    },
+    {
+      "id": "frame856",
+      "label": "Endoscopie HD — frame856 (vocal.png)",
+      "image": "endoscopie_hd/frame856.png",
+      "mask": null,
+      "modality": "Endoscopie laryngée RGB 640x480",
+      "source": "Rapport Atelier 1 (image native)",
+      "notes": "Pas de vérité terrain : comparaison visuelle uniquement.",
+      "preset": {},
+      "in_demo_training": false
+    },
+    {
+      "id": "te_no_106",
+      "label": "IRM cérébrale — Te-no_106 (TP3)",
+      "image": "irm/Te-no_106.png",
+      "mask": null,
+      "modality": "IRM cérébrale axiale, niveaux de gris",
+      "source": "TP3_IM.ipynb cellule 1 (panneau 'Originale')",
+      "notes": "Image du TP3 (ventricules = région la plus sombre). Aucun modèle DL entraîné sur l'IRM : démonstration des méthodes classiques uniquement. Préréglage TP3 : toutes les composantes sombres ne touchant pas le bord (ventricules + sillons).",
+      "preset": {
+        "fov_threshold": 0,
+        "keep": "all"
+      },
+      "in_demo_training": false
+    },
+    {
+      "id": "tumor",
+      "label": "IRM cérébrale — Tumor.jpg (Complément TP1)",
+      "image": "irm/Tumor.png",
+      "mask": null,
+      "modality": "IRM cérébrale axiale, niveaux de gris",
+      "source": "TP1_IM_Complément.ipynb cellule 6",
+      "notes": "Aucun modèle DL pour cette modalité. Préréglage TP3 : toutes les composantes sombres ne touchant pas le bord (ventricules + sillons).",
+      "preset": {
+        "fov_threshold": 0,
+        "keep": "all"
+      },
+      "in_demo_training": false
+    },
+    {
+      "id": "pneumonia",
+      "label": "Radiographie thoracique — pneumonia (Complément TP1)",
+      "image": "radio/pneumonia.png",
+      "mask": null,
+      "modality": "Radiographie thoracique, niveaux de gris",
+      "source": "TP1_IM_Complément.ipynb cellule 6",
+      "notes": "Aucun modèle DL pour cette modalité ; aucune région cible définie dans les TPs.",
+      "preset": {
+        "fov_threshold": 0
+      },
+      "in_demo_training": false
+    }
+  ]
+}

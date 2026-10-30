@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medseg"
+version = "1.0.0"
+description = "Prétraitement et segmentation d'images médicales (méthodes des TPs de l'atelier imagerie médicale, SUP'COM)"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26", "opencv-python-headless>=4.9", "scikit-image>=0.22", "scikit-learn>=1.4",
+  "scipy>=1.11", "pandas>=2.1", "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.50", "altair>=5.0", "matplotlib>=3.8"]
+deep = ["tensorflow>=2.16"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["ignore::DeprecationWarning"]

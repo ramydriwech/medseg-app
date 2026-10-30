@@ -1,0 +1,51 @@
+{
+  "origin": "TP4 - simple_unet_model (TP4_IM.ipynb, cellules 7, 26, 35)",
+  "framework": "TensorFlow / Keras 3.13 (Colab), fichier HDF5",
+  "modality": "Endoscopie laryngée (vidéo des cordes vocales), images RGB",
+  "target": "Glotte (espace glottique)",
+  "training_data": "endoscopy_dataset.rar : 100 frames RGB 256x256 + masques binaires ; split aléatoire 75 / 15 / 10 (random_state=42)",
+  "input_size": [
+    256,
+    256
+  ],
+  "channels": 3,
+  "normalization": "RGB, resize INTER_AREA 256x256, x / 255",
+  "threshold": 0.5,
+  "is_demo": false,
+  "id": "unet_tp4_50ep",
+  "name": "U-Net TP4 — 50 époques",
+  "weights": "unet_endoscopie_batch16_epochs50.hdf5",
+  "training": {
+    "epochs": 50,
+    "batch_size": 16,
+    "optimizer": "adam",
+    "loss": "binary_crossentropy",
+    "split": "random",
+    "augmentation": false,
+    "seed": 42
+  },
+  "reported_metrics": {
+    "validation": {
+      "loss": 0.0024,
+      "accuracy": 0.9991,
+      "IoU": 0.5847,
+      "Dice": 0.6759
+    },
+    "test": {
+      "IoU": 0.723,
+      "Dice": 0.8063,
+      "n_images": 10
+    },
+    "portage_dans_l_application": {
+      "Dice_vs_GT_10_frames_reconstruites": 0.592,
+      "Dice_frames_glotte_>300px (6 images)": 0.869,
+      "remarque": "Images de test reconstruites depuis les figures du notebook (légère perte de netteté) : sur les glottes de 8-22 px la probabilité maximale est ~0,5 et bascule sous le seuil. Le notebook lui-même échoue sur la frame de test 4."
+    }
+  },
+  "limitations": [
+    "Les 100 images sont des frames consécutives d'une seule vidéo et le split est aléatoire : les images de test sont quasi identiques à des images d'entraînement (scores de test optimistes).",
+    "Évaluation sur 10 images seulement.",
+    "Domaine d'entraînement : un seul patient, résolution 256x256, glotte de quelques centaines de pixels."
+  ],
+  "selected_by_default": true
+}

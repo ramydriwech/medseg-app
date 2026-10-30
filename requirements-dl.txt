@@ -1,0 +1,5 @@
+# Deep learning (TP4 U-Net, TensorFlow/Keras). Kept separate: if TensorFlow cannot be
+# installed (e.g. unsupported Python version), the application still runs with the deep
+# learning part disabled. TensorFlow wheels exist for Python 3.10 - 3.13 (Windows: CPU only).
+tensorflow>=2.16
+h5py>=3.10

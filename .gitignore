@@ -1,0 +1,22 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated outputs
+results/
+logs/
+*.log
+
+# Editor and system files
+.vscode/
+.DS_Store
+Thumbs.db

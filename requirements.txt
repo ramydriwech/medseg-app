@@ -1,0 +1,12 @@
+# Core + interface + tests. Python 3.10 - 3.12 recommended (TensorFlow, see requirements-dl.txt).
+numpy>=1.26
+opencv-python-headless>=4.9
+scikit-image>=0.22
+scikit-learn>=1.4
+scipy>=1.11
+pandas>=2.1
+Pillow>=10.0
+matplotlib>=3.8
+streamlit>=1.50
+altair>=5.0
+pytest>=8.0
